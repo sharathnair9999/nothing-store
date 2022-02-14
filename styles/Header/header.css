@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+:root{
+  --all-white: #fff;
+  --nav-bar-bg: #22d3ee;
+  --search-hover: #0891b2;
+  --nav-bar-res: #dfdede;
+  --black : #000000;
+  --nav-hover: #cfcfcf4d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+.header{
+  position: sticky;
+  z-index: 1;
+  box-shadow: 1px 4px 5px 1px var(--box-shadow-color);
+  top: 0;
+}
+
+.main-logo{
+  font-size: 1.8rem;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  border: none;
+}
+.main-logo a{
+
+  color: var(--all-white);
+}
+
+.main-logo:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--all-white);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.main-logo:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+nav{
+  display: flex;
+  width: 100%;
+  background-color: var(--nav-bar-bg);
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px 20px; 
+}
+
+nav ol{
+  display: flex;
+  margin: auto 0;
+}
+
+nav ol li{
+  margin: 0 4px;
+}
+
+nav ol li a{
+  color: var(--all-white);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+
+nav .search_box{
+  display: flex;
+  margin: auto 0;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 4px;
+}
+
+nav .search_box input{
+  border: none;
+  outline: none;
+  background-color: var(--all-white);
+  height: 100%;
+  padding: 0 10px;
+  font-size: 20px;
+  max-width: 25rem;
+}
+
+nav .search_box span{
+  color: var(--all-white);
+  background: var(--nav-bar-bg);
+  height: 100%;
+  padding: 8px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+
+nav .search_box span:hover{
+  color: var(--all-white);
+}
+
+
+nav .search_box span::after{
+  height: 100%;
+  width: 0%;
+  content: '';
+  background: var(--search-hover);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+nav .search_box span:hover::after{
+  width: 100%;
+}
+
+
+nav .bar{
+  position: relative;
+  margin: auto;
+  display: none;
+}
+
+
+nav .bar span{
+  position: absolute;
+  color: var(--all-white);
+  font-size: 20px;
+}
+
+input[type="checkbox"]{
+  -webkit-appearance: none;
+  display: none;
+}
+
+nav .nav-actions{
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (max-width:1050px){
+
+  .main-logo{
+    font-size: 1.5rem;
+  }
+
+  nav{
+    display: block;
+    padding: 0;
+  }
+  nav .icon{
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  nav .search_box{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 15px;
+ }
+
+  nav .search_box input{
+    width: 90%;
+  }
+  
+  nav ol{
+    display: flex;
+    flex-direction: column;
+    background: var(--nav-bar-bg);
+    height: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  nav ol li{
+    transition: 0.3s 0.1s all;
+    opacity: 0;
+    margin-bottom: 8px;
+  }
+  nav ol li a{
+    color: var(--all-white);
+    font-size: 1.3rem;
+    padding: 8px 10px;
+    display: block;
+  }
+
+   nav ol li:nth-child(1)::after{
+     content: " Notifications";
+     transform: translateX(-150px);
+    }
+    nav ol li:nth-child(2)::after{
+     content: " Cart";
+      transform: translateX(-200px);
+   }
+   nav ol li:nth-child(3){
+      transform: translateX(-250px);
+   }
+
+  nav .bar{
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    cursor: pointer;
+  }
+
+  nav .bar #times{
+    display: none;
+  }
+
+  #check:checked ~ nav .bar #times{
+    display: block;
+  }
+
+  #check:checked ~ nav .bar #bars{
+    display: none;
+  }
+
+  #check:checked ~ nav ol{
+    visibility: visible;
+    height: 450px;
+  }
+  #check:checked ~ nav ol li:nth-child(1),
+  #check:checked ~ nav ol li:nth-child(2),
+  #check:checked ~ nav ol li:nth-child(3){
+     transform: translateX(0);
+     opacity: 1;
+  }
+
+}
+
+.user-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
