@@ -126,9 +126,6 @@
   width: auto;
 }
 
-.heart{
-  color: red;
-}
 
 @media screen and (max-width:768px) {
   .landing-text h3{

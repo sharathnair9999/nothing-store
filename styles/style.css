@@ -38,6 +38,8 @@ body {
     background: rgb(93, 223, 255);
   }
 
+
+  /* Footer Styling */
   .footer{
     position: relative;
     bottom: 0;
@@ -67,4 +69,7 @@ body {
     gap: 3rem;
   }
 
+  .heart{
+    color: red;
+  }
   
