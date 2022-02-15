@@ -134,6 +134,9 @@ nav .bar{
   display: none;
 }
 
+.search_box input{
+  border-radius: 4px;
+}
 
 nav .bar span{
   position: absolute;
@@ -141,7 +144,7 @@ nav .bar span{
   font-size: 20px;
 }
 
-input[type="checkbox"]{
+#check[type="checkbox"]{
   -webkit-appearance: none;
   display: none;
 }

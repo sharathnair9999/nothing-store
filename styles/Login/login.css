@@ -54,3 +54,9 @@
   position: absolute;
   bottom: 0;
 }
+
+.checkbox{
+  justify-content: flex-start;
+  padding: 4px 0;
+  font-size: 0.9rem;
+}
