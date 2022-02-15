@@ -4,10 +4,7 @@ body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-body {
   font-family: cursive;
-  
 }
  a {
    text-decoration: none;
@@ -38,6 +35,15 @@ body {
     background: rgb(93, 223, 255);
   }
 
+  .pagewrap{
+    display: flex;  
+    flex-direction: column;
+    min-height: 100vh; 
+
+  }
+  main{
+    flex-grow: 1;
+  }
 
   /* Footer Styling */
   .footer{
