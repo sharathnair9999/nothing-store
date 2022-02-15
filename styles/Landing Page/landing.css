@@ -1,0 +1,147 @@
+:root{
+  --landing-text-bg: #3f43447a;
+}
+
+.landing-section{
+  background-image: url('../../assets/landing-bg.jpg');
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.landing-text{
+  background:var(--landing-text-bg);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  max-width: 30rem;
+}
+
+.landing-text h3{
+  color: var(--all-white);
+  font-size: 2rem;
+}
+
+.landing-text p{
+  font-size: 1rem;
+  color: var(--primary-50);
+}
+
+.landing-text a{
+  color: var(--all-white);
+}
+
+.line-behind {
+  width: auto;
+  position: relative;
+  text-align: center;
+  padding: 1rem 0;
+ 
+}
+.line-behind span {
+  content: " ";
+  border-top: 3px solid var(--dark-900);
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+.line-behind h3 {
+  background-color: var(--all-white);
+  display: inline-block;
+}
+
+.categories-container{
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: relative;
+}
+
+.category{  
+  width: 15rem;
+  flex-direction: column;
+  position: relative;
+}
+
+.category-image{
+  border-radius: 4px;
+  
+}
+
+.category-text-overlay{
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(240, 240, 240, 0.493);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.category:hover .category-text-overlay{
+  opacity: 1;
+}
+
+.category:hover .category-image{
+  opacity: 0.7;
+}
+
+.category-image{
+  height: 15rem;
+  width: 100%;
+}
+
+.category a{
+  color: var(--dark-900);
+  background-color: var(--all-white);
+  padding: 4px 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.new-launches{
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.launch{
+  padding: 1rem;
+  gap: 1rem;
+  max-width: 35rem;
+  height: auto;
+  background-color: rgb(252, 252, 252);
+  border-radius: 4px;
+  margin: 1rem;
+}
+
+.launch-image{
+  height: 10rem;
+  width: auto;
+}
+
+
+@media screen and (max-width:768px) {
+  .landing-text h3{
+    font-size: 1.3rem;
+  }
+
+
+  .landing-text p{
+    font-size: 0.8rem;
+  }
+
+  .launch-image{
+    height: 7rem;
+  }
+  .launch{
+    max-width: 20rem;
+    font-size: 0.7rem;
+  }
+}
