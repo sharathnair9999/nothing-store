@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link to my component library -->
+  <link rel="stylesheet" href="https://nothing-ui-library.netlify.app/styles/index.css" />
+
+  <!-- Link to stylesheet for this page -->
+  <link rel="stylesheet" href="../styles/style.css" />
+
+  <!-- Link to fontawesome kit -->
+  <script src="https://kit.fontawesome.com/e8886bba5e.js" crossorigin="anonymous"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../assets/favicon-32x32.png" />
+
+  <!-- Landing page CSS -->
+  <link rel="stylesheet" href="../styles/Products/products.css" />
+  <title>Products | Nothing Store</title>
+</head>
+
+<body>
+  <!-- Header Section Starts -->
+  <input type="checkbox" name="" id="check" />
+  <nav class="header">
+    <div class="icon my-auto">
+      <h1 class="main-logo">
+        <a href="../index.html" class="flex-and-center">Nothing Store</a>
+      </h1>
+    </div>
+    <div class="search_box">
+      <input type="search" placeholder="Search Here..." />
+      <span class="fa-solid fa-magnifying-glass"></span>
+    </div>
+    <ol class="nav-actions flex">
+      <li>
+        <a href="#">
+          <div class="badge-container mx-1">
+            <i class="fas fa-bell fa-lg"></i><span class="icon-badge green-badge flex-and-center">10</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="badge-container mx-1">
+            <i class="fas fa-cart-shopping fa-lg"></i><span class="icon-badge green-badge flex-and-center">10</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="badge-container mx-1">
+            <i class="fa-solid fa-heart fa-lg"></i></i><span class="icon-badge green-badge flex-and-center">2</span>
+          </div>
+        </a>
+      </li>
+      <li><a href="#" class="link"><i class="fa-solid fa-user"></i></a></li>
+    </ol>
+    <label for="check" class="bar">
+      <span class="fa-solid fa-bars" id="bars"></span>
+      <span class="fa-solid fa-times" id="times"></span>
+    </label>
+  </nav>
+
+  <!-- Header Section Ends -->
+
+
+  <!-- Landing Page Content Starts -->
+  <main class="products-section flex">
+    <aside class="filter-section">
+      <div class="flex">
+        <h3 class="property-header">Filter</h3>
+        <span class="link clear-btn">Clear</span>
+      </div>
+      <br>
+      <section>
+        <h4 class="property-header">Price</h4>
+        <input type="range" name="price-filter" id="price-filter">
+      </section>
+      <section>
+        <h4 class="property-header">Brand</h4>
+        <div class="checkbox">
+          <input type="checkbox" id="category1" checked><label for="category1">Apple</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="category2"><label for="category2">Samsung</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="category2"><label for="category2">Sony</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="category2"><label for="category2">LG</label>
+        </div>
+      </section>
+      <section>
+        <h4 class="property-header">Ratings</h4>
+        <div class="radio">
+          <input type="radio" id="radio1" name="rating-filter" checked><label for="radio1">4 Stars & above</label>
+        </div>
+        <div class="radio">
+          <input type="radio" id="radio2" name="rating-filter"><label for="radio2">3 Stars & above</label>
+        </div>
+        <div class="radio">
+          <input type="radio" id="radio3" name="rating-filter"><label for="radio3">2 Stars & above</label>
+        </div>
+        <div class="radio">
+          <input type="radio" id="radio4" name="rating-filter"><label for="radio4">1 Stars & above</label>
+        </div>
+
+      </section>
+      <section>
+        <h4 class="property-header">Sort By</h4>
+        <div class="radio">
+          <input type="radio" id="radio5" name="sort-by-price" checked><label for="radio5">Price - Low to High</label>
+        </div>
+        <div class="radio">
+          <input type="radio" id="radio6" name="sort-by-price"><label for="radio6">Price - High to Low</label>
+        </div>
+      </section>
+    </aside>
+    <div class="products-list flex flex-col">
+      <div class="filters-applied flex">
+        <span><b>Showing all Products</b> <span>(Showing 10 results)</span></span>
+        <div class="flex-and-center">
+          <h4>Filters Applied : </h4>
+          <span class="chip flex gap-1">
+            <span class="chip-text">Apple</span>
+            <i class="fa-solid fa-circle-xmark fa-sm close-icon"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="products-container grid">
+        <div class="product vertical-card saved">
+          <div class="image-container">
+            <img src="../assets/ps5.jpg" alt="ps5" class="card-image">
+            <div class="btn-section">
+              <span class="flag">Only 2 left!</span>
+              <div class="corner-btns">
+                <button class="btn flex-and-center"><i class="fas fa-heart save"></i></button>
+                <button class="btn flex-and-center"><i class="fas fa-share send"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="text-section">
+            <h4>PlayStation 5 - DVD + Online</h4>
+            <small>Sony Pvt. Ltd.</small>
+          </div>
+          <div class="rating-section">
+            <i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="rate-section">
+            <span class="curr-price">₹ 39,999.00</span>
+            <span class="mrp-price">₹ 59,999.00</span>
+            <span class="percent-off">(33% off)</span>
+          </div>
+          <div class="card-action-btns">
+            <button class="action-btn primary">Buy now</button>
+            <button class="action-btn secondary">Remove from Wishlist</button>
+          </div>
+        </div>
+        <div class="product vertical-card">
+          <div class="image-container">
+            <img src="../assets/sony-xm4.png" alt="sony-headphones" class="card-image">
+            <div class="corner-btns">
+              <button class="btn flex-and-center"><i class="fas fa-heart save"></i></button>
+              <button class="btn flex-and-center"><i class="fas fa-share send"></i></button>
+            </div>
+          </div>
+          <div class="text-section">
+            <h4>Sony WH 1000XM4</h4>
+            <small>Sony Pvt. Ltd.</small>
+          </div>
+          <div class="rating-section">
+            <i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="rate-section">
+            <span class="curr-price">₹ 26,990.00</span>
+            <span class="mrp-price">₹ 29,999.00</span>
+            <span class="percent-off">(10% off)</span>
+          </div>
+          <div class="card-action-btns">
+            <button class="action-btn primary">Buy now</button>
+            <button class="action-btn secondary">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product vertical-card-text-overlay flex">
+          <div class="image-container">
+            <img src="../assets/iphone.jpg" alt="ihpone" class="card-image">
+            <div class="corner-btns">
+              <button class="btn flex-and-center"><i class="fas fa-heart save"></i></button>
+              <button class="btn flex-and-center"><i class="fas fa-share send"></i></button>
+            </div>
+          </div>
+          <div class="text-section">
+            <h4>Apple iPhone XR - 64GB</h4>
+            <small>Apple Inc.</small>
+          </div>
+          <div class="rating-section">
+            <i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="rate-section">
+            <span class="curr-price">₹ 38,999.00</span>
+            <span class="mrp-price">₹ 44,999.00</span>
+            <span class="percent-off">(25% off)</span>
+          </div>
+          <div class="card-action-btns">
+            <button class="action-btn primary">Buy now</button>
+            <button class="action-btn secondary">Add to Cart</button>
+          </div>
+          <div class="text-overlay-section flex-and-center"><span class="text">Sold Out!</span></div>
+        </div>
+        <div class="product vertical-card">
+          <div class="image-container">
+            <img src="../assets/macbook.avif" alt="ps5" class="card-image">
+            <div class="corner-btns">
+              <button class="btn flex-and-center"><i class="fas fa-heart save"></i></button>
+              <button class="btn flex-and-center"><i class="fas fa-share send"></i></button>
+            </div>
+          </div>
+          <div class="text-section">
+            <h4>Apple MacBook Air M1 Chip</h4>
+            <small>Apple Inc.</small>
+          </div>
+          <div class="rating-section">
+            <i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="rate-section">
+            <span class="curr-price">₹ 1,09,490.00</span>
+            <span class="mrp-price">₹ 1,19,999.00</span>
+            <span class="percent-off">(10% off)</span>
+          </div>
+          <div class="card-action-btns">
+            <button class="action-btn primary">Buy now</button>
+            <button class="action-btn secondary">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product vertical-card">
+          <div class="image-container">
+            <img src="../assets/ps5.jpg" alt="ps5" class="card-image">
+            <div class="corner-btns">
+              <button class="btn flex-and-center"><i class="fas fa-heart save"></i></button>
+              <button class="btn flex-and-center"><i class="fas fa-share send"></i></button>
+            </div>
+          </div>
+          <div class="text-section">
+            <h4>PlayStation 5 - DVD + Online</h4>
+            <small>Sony Pvt. Ltd.</small>
+          </div>
+          <div class="rating-section">
+            <i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="rate-section">
+            <span class="curr-price">₹ 39,999.00</span>
+            <span class="mrp-price">₹ 59,999.00</span>
+            <span class="percent-off">(33% off)</span>
+          </div>
+          <div class="card-action-btns">
+            <button class="action-btn primary">Buy now</button>
+            <button class="action-btn secondary">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product vertical-card">
+          <div class="image-container">
+            <img src="../assets/ps5.jpg" alt="ps5" class="card-image">
+            <div class="corner-btns">
+              <button class="btn flex-and-center"><i class="fas fa-heart save"></i></button>
+              <button class="btn flex-and-center"><i class="fas fa-share send"></i></button>
+            </div>
+          </div>
+          <div class="text-section">
+            <h4>PlayStation 5 - DVD + Online</h4>
+            <small>Sony Pvt. Ltd.</small>
+          </div>
+          <div class="rating-section">
+            <i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="rate-section">
+            <span class="curr-price">₹ 39,999.00</span>
+            <span class="mrp-price">₹ 59,999.00</span>
+            <span class="percent-off">(33% off)</span>
+          </div>
+          <div class="card-action-btns">
+            <button class="action-btn primary">Buy now</button>
+            <button class="action-btn secondary">Remove from Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <!-- Landing Page Content Ends -->
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <section>
+      <p>Made With <span class="heart">❤</span> by P. Sharath</p>
+      <p>
+        You can Contribute
+        <a href="https://github.com/sharathnair9999/nothing-store" target="_blank">Here <i
+            class="fa-brands fa-github fa-lg"></i></a>
+      </p>
+    </section>
+    <div class="socials-container">
+      <h3>Socials</h3>
+      <ul class="social_links flex-and-center">
+        <li>
+          <a href="https://www.linkedin.com/in/sharath99/" target="_blank"><i
+              class="fa-brands fa-linkedin fa-lg"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Nairified" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
