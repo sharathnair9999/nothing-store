@@ -35,12 +35,6 @@ body{
     background: rgb(93, 223, 255);
   }
 
-  .pagewrap{
-    display: flex;  
-    flex-direction: column;
-    min-height: 100vh; 
-
-  }
   main{
     flex-grow: 1;
   }
@@ -48,9 +42,7 @@ body{
   /* Footer Styling */
   .footer{
     position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    clear: both;
     width: 100%;
     padding: 0.5rem 1rem;
     display: flex;

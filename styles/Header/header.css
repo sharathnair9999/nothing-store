@@ -201,6 +201,7 @@ nav .nav-actions{
   nav ol li{
     transition: 0.3s 0.1s all;
     opacity: 0;
+    margin: 1.5rem 0;
     margin-bottom: 8px;
   }
   nav ol li a{
@@ -210,18 +211,11 @@ nav .nav-actions{
     display: block;
   }
 
-   nav ol li:nth-child(1)::after{
-     content: " Notifications";
+   nav ol li::after{
+     /* content: " Notifications"; */
      transform: translateX(-150px);
     }
-    nav ol li:nth-child(2)::after{
-     content: " Cart";
-      transform: translateX(-200px);
-   }
-   nav ol li:nth-child(3){
-      transform: translateX(-250px);
-   }
-
+   
   nav .bar{
     display: block;
     position: absolute;
@@ -251,9 +245,8 @@ nav .nav-actions{
     overflow: auto;
 
   }
-  #check:checked ~ nav ol li:nth-child(1),
-  #check:checked ~ nav ol li:nth-child(2),
-  #check:checked ~ nav ol li:nth-child(3){
+  #check:checked ~ nav ol li
+  {
      transform: translateX(0);
      opacity: 1;
   }
