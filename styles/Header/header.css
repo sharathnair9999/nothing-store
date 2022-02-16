@@ -21,6 +21,7 @@
   z-index: 1;
   box-shadow: 1px 4px 5px 1px var(--box-shadow-color);
   top: 0;
+  height: 10vh;
 }
 
 .main-logo{
@@ -155,6 +156,10 @@ nav .nav-actions{
 }
 
 @media screen and (max-width:1050px){
+
+  .header{
+    height: 15vh;
+  }
 
   .main-logo{
     font-size: 1.5rem;
