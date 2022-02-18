@@ -240,7 +240,7 @@ nav .nav-actions{
     visibility: visible;
     height: 50vh;
     position: absolute;
-    top: 15vh;
+    top: 12vh;
     bottom: 0;
     overflow: auto;
 
@@ -256,6 +256,10 @@ nav .nav-actions{
     align-items: center;
   }
 
+}
+
+.nav-actions .badge-container:hover{
+  color: rgb(184, 241, 248);
 }
 
 .user-icon{

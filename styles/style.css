@@ -10,7 +10,7 @@ body{
    text-decoration: none;
    color: black;
   }
- li {
+ ol li {
    list-style: none;
   }
 

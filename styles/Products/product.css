@@ -1,0 +1,104 @@
+.product-section {
+  min-height: 90vh;
+
+  max-width: 90vw;
+}
+
+.product-main-info {
+  transition: all 0.3s ease;
+  padding-top: 2rem;
+}
+
+.corner-btns button.btn {
+  background-color: var(--all-white);
+}
+
+.product-title {
+  font-size: 1.1rem;
+}
+
+.product-main-info .link {
+  padding: 0;
+  margin: 0;
+}
+
+.alert-text {
+  font-weight: 700;
+}
+
+.availability input {
+  max-width: 10rem;
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.availability .btn {
+  padding: 4px 8px;
+}
+
+.alert-text {
+  font-size: 0.8rem;
+  color: var(--red-300);
+}
+
+.image-container {
+  max-width: 20rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.image-container:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.2);
+}
+
+.image-container:hover .product-section {
+  background-color: rgba(26, 16, 16, 0.459);
+}
+
+.image-container .corner-btns {
+  top: 0;
+  right: 0;
+}
+
+.side-details {
+  font-size: 0.8rem;
+}
+
+.side-details button.btn {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.product-info {
+  max-width: 60vw;
+}
+
+.rate-section {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .product-main-info {
+    flex-direction: column;
+    transition: all 0.3s ease;
+    align-items: center;
+    gap: 0;
+  }
+  
+  .rate-section {
+    font-size: 0.8rem;
+  }
+  .image-container:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+  .btn {
+    font-size: 0.7rem;
+  }
+
+  .product-info {
+    max-width: 90vw;
+    font-size: 0.8rem;
+  }
+}
