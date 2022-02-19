@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link to my component library -->
+  <link rel="stylesheet" href="https://nothing-ui-library.netlify.app/styles/index.css" />
+
+  <!-- Link to stylesheet for this page -->
+  <link rel="stylesheet" href="../styles/style.css" />
+
+  <!-- Link to fontawesome kit -->
+  <script src="https://kit.fontawesome.com/e8886bba5e.js" crossorigin="anonymous"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../assets/favicon-32x32.png" />
+
+  <!-- Landing page CSS -->
+  <link rel="stylesheet" href="../styles/Products/product.css" />
+  <title>Product | Nothing Store</title>
+</head>
+
+<body>
+  <!-- Header Section Starts -->
+  <input type="checkbox" name="" id="check" />
+  <nav class="header">
+    <div class="icon my-auto">
+      <h1 class="main-logo">
+        <a href="../index.html" class="flex-and-center">Nothing Store</a>
+      </h1>
+    </div>
+    <div class="search_box">
+      <input type="search" placeholder="Search Here..." />
+      <span class="fa-solid fa-magnifying-glass"></span>
+    </div>
+    <ol class="nav-actions flex">
+      <li>
+        <a href="#">
+          <div class="badge-container mx-1">
+            <i class="fas fa-bell fa-lg"></i><span class="icon-badge green-badge flex-and-center">10</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./cart.html">
+          <div class="badge-container mx-1">
+            <i class="fas fa-cart-shopping fa-lg"></i><span class="icon-badge green-badge flex-and-center">10</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./wishlist.html">
+          <div class="badge-container mx-1">
+            <i class="fa-solid fa-heart fa-lg"></i></i><span class="icon-badge green-badge flex-and-center">2</span>
+          </div>
+        </a>
+      </li>
+      <li><a href="#" class="link badge-container"><i class="fa-solid fa-user"></i></a></li>
+    </ol>
+    <label for="check" class="bar">
+      <span class="fa-solid fa-bars" id="bars"></span>
+      <span class="fa-solid fa-times" id="times"></span>
+    </label>
+  </nav>
+
+  <!-- Header Section Ends -->
+
+
+  <!-- Landing Page Content Starts -->
+  <main class="product-section flex-and-center flex-col">
+    <div class="product-main-info justify-center items-fs flex my-1 gap-2">
+      <div class="image-container relative">
+        <img src="../assets/macbook.avif" alt="ps5" class="responsive-img">
+        <div class="absolute corner-btns">
+          <button class="btn flex-and-center"><i class="fas fa-heart save"></i></button>
+          <button class="btn flex-and-center"><i class="fas fa-share send"></i></button>
+        </div>
+      </div>
+      <div class="side-details">
+        <h3 class="product-title">Apple MacBook Air M1 chip</h3>
+        <span class="alert-text">Only 4 left!!!</span>
+        <div class="rate-section">
+          <span class="curr-price">₹ 1,09,999.00</span>
+          <span class="mrp-price">₹ 1,14,999.00</span>
+          <span class="percent-off">(10% off)</span>
+        </div>
+        <div class="rating-section">
+          <i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i><i class="fas fa-star"></i>
+          <span>(<b>49</b> reviews and <b>39</b> ratings)</span>
+        </div>
+        <a href="#" class="link">EMI Options</a>
+        <br>
+        
+        <div class="flex justify-fs availability gap-1">
+       
+            <input type="number" name="pincode" id="pincode" class="input-box"
+              placeholder="Enter your pincode">
+         
+          <button class="btn btn-outline-primary mt-auto">Check</button>
+        </div>
+        <br>
+        <div class="action-btns flex flex-col gap-1">
+          <button class="btn btn-primary">Buy Now</button>
+          <button class="btn btn-light">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="product-info flex justify-center items-fs flex-col mx-1 mb-1">
+      <h3>About this item</h3>
+    <ul>
+      <li>All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.</li>
+      <li>Powerful Performance – Take on everything from professional-quality editing to action-packed gaming with ease. The Apple M1 chip with an 8-core CPU delivers up to 3.5x faster performance than the previous generation while using way less power.</li>
+      <li>Superfast Memory – 8GB of unified memory makes your entire system speedy and responsive. That way it can support tasks like memory-hogging multitab browsing and opening a huge graphic file quickly and easily.</li>
+      <li>Stunning Display – With a 13.3-inch/33.74 cm Retina display, images come alive with new levels of realism. Text is sharp and clear, and colors are more vibrant.</li>
+      <li>Simply Compatible – All your existing apps work, including Adobe Creative Cloud, Microsoft 365, and Google Drive. Plus you can use your favorite iPhone and iPad apps directly on macOS. Altogether you’ll have access to the biggest collection of apps ever for Mac. All available on the App Store.</li>
+    </ul>
+    <br>
+    <h3>Manufactured at</h3>
+    <p>Apple Inc. California</p>
+    </div>
+  </main>
+
+  <!-- Landing Page Content Ends -->
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <section>
+      <p>Made With <span class="heart">❤</span> by P. Sharath</p>
+      <p>
+        You can Contribute
+        <a href="https://github.com/sharathnair9999/nothing-store" target="_blank">Here <i
+            class="fa-brands fa-github fa-lg"></i></a>
+      </p>
+    </section>
+    <div class="socials-container">
+      <h3>Socials</h3>
+      <ul class="social_links flex-and-center">
+        <li>
+          <a href="https://www.linkedin.com/in/sharath99/" target="_blank"><i
+              class="fa-brands fa-linkedin fa-lg"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Nairified" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
