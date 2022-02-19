@@ -75,9 +75,9 @@
 
 
   <!-- Landing Page Content Starts -->
-  <main class="products-section flex">
-    <aside class="filter-section">
-      <div class="flex">
+  <main class="products-section gap-2 flex">
+    <aside class="filter-section sticky p-1 top-0">
+      <div class="flex items-center">
         <h3 class="property-header">Filter</h3>
         <span class="link clear-btn">Clear</span>
       </div>
@@ -95,10 +95,25 @@
           <input type="checkbox" id="category2"><label for="category2">Samsung</label>
         </div>
         <div class="checkbox">
-          <input type="checkbox" id="category2"><label for="category2">Sony</label>
+          <input type="checkbox" id="category3"><label for="category3">Sony</label>
         </div>
         <div class="checkbox">
-          <input type="checkbox" id="category2"><label for="category2">LG</label>
+          <input type="checkbox" id="category4"><label for="category4">LG</label>
+        </div>
+      </section>
+      <section>
+        <h4 class="property-header">Device</h4>
+        <div class="checkbox">
+          <input type="checkbox" id="category5" checked><label for="category5">Desktop</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="category6"><label for="category6">Laptop</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="category7"><label for="category7">Smartphone</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="category8"><label for="category8">Headphones</label>
         </div>
       </section>
       <section>
@@ -128,7 +143,7 @@
       </section>
     </aside>
     <div class="products-list flex flex-col">
-      <div class="filters-applied flex">
+      <div class="filters-applied gap-1 flex pt-1">
         <span><b>Showing all Products</b> <span>(Showing 10 results)</span></span>
         <div class="flex-and-center">
           <h4>Filters Applied : </h4>
@@ -139,7 +154,7 @@
         </div>
       </div>
 
-      <div class="products-container grid">
+      <div class="products-container grid gap-sm py-1">
         <div class="product vertical-card saved">
           <div class="image-container">
             <a href="./product.html"><img src="../assets/ps5.jpg" alt="ps5" class="card-image"></a>
