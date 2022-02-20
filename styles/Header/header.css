@@ -19,7 +19,7 @@
   z-index: 1;
   box-shadow: 1px 4px 5px 1px var(--box-shadow-color);
   top: 0;
-  height: 10vh;
+  height: 5rem;
 }
 
 .main-logo{
@@ -155,7 +155,7 @@ nav .nav-actions{
 @media screen and (max-width:1050px){
 
   .header{
-    height: 100%;
+    height: 6rem;
   }
 
   .main-logo{
@@ -192,7 +192,7 @@ nav .nav-actions{
     visibility: hidden;
     transition: all 0.3s;
     position: absolute;
-    top: 15vh;
+    top: 6rem;
     padding: 1rem 2rem;
     right: 0;
     height: 0;
@@ -239,9 +239,9 @@ nav .nav-actions{
   #check:checked ~ nav ol{
     visibility: visible;
     height: 50vh;
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 0.8rem;
     position: absolute;
-    top: 12vh;
+    top: 6rem;
     bottom: 0;
     overflow: auto;
 
