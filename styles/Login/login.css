@@ -4,11 +4,15 @@
   --black: black;
 }
 
-.signup-container , .login-container{
+.signup-container , .login-container, .logout-container{
   padding: 2rem;
   gap: 3rem;
   flex-wrap: wrap;
   min-height: 90vh;
+}
+
+.logout-container{
+  gap: 1rem;
 }
 
 .form-controls{
@@ -28,6 +32,10 @@
 
   .signup-container{
     gap: 1rem;
+  }
+
+  .logout-container h2{
+    font-size: 1rem;
   }
 }
 
@@ -55,4 +63,13 @@
   justify-content: flex-start;
   padding: 4px 0;
   font-size: 0.9rem;
+}
+
+.logout-container .img-container{
+  max-width: 30rem;
+}
+
+.img-container img{
+  border-radius: 10px;
+  box-shadow: 4px 6px 8px 3px var(--box-shadow-color);
 }
