@@ -1,3 +1,7 @@
+:root{
+  --transparent-dark-bg:#1a101075;
+}
+
 .product-section {
   min-height: 90vh;
 
@@ -53,7 +57,7 @@
 }
 
 .image-container:hover .product-section {
-  background-color: rgba(26, 16, 16, 0.459);
+  background-color: var(--transparent-dark-bg);
 }
 
 .image-container .corner-btns {

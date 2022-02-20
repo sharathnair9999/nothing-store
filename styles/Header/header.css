@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
 
 :root{
-  --all-white: #fff;
-  --nav-bar-bg: #0891b2;
   --search-hover: #22d3ee;
   --nav-bar-res: #dfdede;
-  --black : #000000;
   --nav-hover: #cfcfcf4d;
+  --nav-icon-hover:#b8f1f8;
 }
 
 * {
@@ -56,7 +54,7 @@
 nav{
   display: flex;
   width: 100%;
-  background-color: var(--nav-bar-bg);
+  background-color: var(--primary-600);
   position: relative;
   justify-content: space-between;
   text-align: center;
@@ -98,7 +96,7 @@ nav .search_box input{
 
 nav .search_box span{
   color: var(--all-white);
-  background: var(--nav-bar-bg);
+  background: var(--primary-600);
   height: 100%;
   padding: 8px;
   position: relative;
@@ -190,7 +188,7 @@ nav .nav-actions{
   nav ol{
     display: flex;
     flex-direction: column;
-    background: var(--nav-bar-bg);
+    background: var(--primary-600);
     visibility: hidden;
     transition: all 0.3s;
     position: absolute;
@@ -262,12 +260,12 @@ nav .nav-actions{
 }
 
 .nav-actions .badge-container:hover{
-  color: rgb(184, 241, 248);
+  color: var(--nav-icon-hover);
 }
 
 .btn-outline-primary:hover{
-  background-color: rgb(184, 241, 248);
-  color: black;
+  background-color: var(--nav-icon-hover);
+  color: var(--black);
 }
 
 .user-icon{

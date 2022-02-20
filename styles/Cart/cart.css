@@ -13,7 +13,7 @@
   min-width: 20rem;
   transition: all 0.3s;
   border-radius: 8px;
-  box-shadow: 2px 4px 8px 6px rgb(216, 216, 216);
+  box-shadow: 2px 4px 8px 6px var(--box-shadow-color);
   position: sticky;
   top: 15vh;
 }
