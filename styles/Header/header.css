@@ -2,8 +2,8 @@
 
 :root{
   --all-white: #fff;
-  --nav-bar-bg: #22d3ee;
-  --search-hover: #0891b2;
+  --nav-bar-bg: #0891b2;
+  --search-hover: #22d3ee;
   --nav-bar-res: #dfdede;
   --black : #000000;
   --nav-hover: #cfcfcf4d;
@@ -179,6 +179,8 @@ nav .nav-actions{
     display: inline-flex;
     justify-content: center;
     margin-bottom: 15px;
+    padding: 0 1rem;
+    font-size: 0.7rem;
  }
 
   nav .search_box input{
@@ -206,7 +208,7 @@ nav .nav-actions{
   }
   nav ol li a{
     color: var(--all-white);
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 8px 10px;
     display: block;
   }
@@ -239,6 +241,7 @@ nav .nav-actions{
   #check:checked ~ nav ol{
     visibility: visible;
     height: 50vh;
+    border-bottom-left-radius: 10px;
     position: absolute;
     top: 12vh;
     bottom: 0;
@@ -260,6 +263,11 @@ nav .nav-actions{
 
 .nav-actions .badge-container:hover{
   color: rgb(184, 241, 248);
+}
+
+.btn-outline-primary:hover{
+  background-color: rgb(184, 241, 248);
+  color: black;
 }
 
 .user-icon{

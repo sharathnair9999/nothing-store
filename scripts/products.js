@@ -1,12 +1,18 @@
-const
-	range = document.getElementById('range'),
-	rangeV = document.getElementById('rangeV'),
-	setValue = ()=>{
-		const
-			newValue = Number( (range.value - range.min) * 100 / (range.max - range.min) ),
-			newPosition = 10 - (newValue * 0.2);
-		rangeV.innerHTML = `<span>${range.value}</span>`;
-		rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
-	};
-document.addEventListener("DOMContentLoaded", setValue);
-range.addEventListener('input', setValue);
+
+
+	const filterBtn = document.getElementById('filter-toggle')
+	const filterSection = document.querySelector('.filter-section')
+	const productList = document.querySelector('.products-list')
+	const filterBtnText = document.querySelector('#filter-btn-text')
+
+
+	filterBtn.addEventListener("click", ()=>{
+		filterSection.classList.toggle('show')
+		productList.classList.toggle('hide')
+
+
+		filterSection.classList.contains('show') ? filterBtnText.innerHTML = "Apply" : filterBtnText.innerHTML = "Filter"
+
+	})
+
+

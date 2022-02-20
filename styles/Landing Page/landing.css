@@ -5,6 +5,7 @@
 .landing-section{
   background-image: url('../../assets/landing-bg.jpg');
   height: 90vh;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

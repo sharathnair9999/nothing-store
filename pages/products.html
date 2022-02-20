@@ -57,10 +57,11 @@
           </div>
         </a>
       </li>
-      <li>
-        <a href="#">
-          <div class="badge-container mx-1">
+      <li class="user-icon  flex-and-center flex-col">
+        <a href="#" class="">
+          <div class="badge-container mx-1 relative">
             <i class="fa-solid fa-user fa-lg"></i></i>
+            <a href="#" class="link logout-btn absolute">Logout</a>
           </div>
         </a>
       </li>
@@ -167,7 +168,9 @@
             </div>
           </div>
           <div class="text-section">
-            <a href="./product.html"><h4>PlayStation 5 - DVD + Online</h4></a>
+            <a href="./product.html">
+              <h4>PlayStation 5 - DVD + Online</h4>
+            </a>
             <small>Sony Pvt. Ltd.</small>
           </div>
           <div class="rating-section">
@@ -193,7 +196,9 @@
             </div>
           </div>
           <div class="text-section">
-            <a href="./product.html"><h4>Sony WH 1000XM4</h4></a>
+            <a href="./product.html">
+              <h4>Sony WH 1000XM4</h4>
+            </a>
             <small>Sony Pvt. Ltd.</small>
           </div>
           <div class="rating-section">
@@ -219,7 +224,9 @@
             </div>
           </div>
           <div class="text-section">
-            <a href="./product.html"><h4>Apple iPhone XR - 64GB</h4></a>
+            <a href="./product.html">
+              <h4>Apple iPhone XR - 64GB</h4>
+            </a>
             <small>Apple Inc.</small>
           </div>
           <div class="rating-section">
@@ -246,7 +253,9 @@
             </div>
           </div>
           <div class="text-section">
-            <a href="./product.html"><h4>Apple MacBook Air M1 Chip</h4></a>
+            <a href="./product.html">
+              <h4>Apple MacBook Air M1 Chip</h4>
+            </a>
             <small>Apple Inc.</small>
           </div>
           <div class="rating-section">
@@ -272,7 +281,9 @@
             </div>
           </div>
           <div class="text-section">
-            <a href="./product.html"><h4>PlayStation 5 - DVD + Online</h4></a>
+            <a href="./product.html">
+              <h4>PlayStation 5 - DVD + Online</h4>
+            </a>
             <small>Sony Pvt. Ltd.</small>
           </div>
           <div class="rating-section">
@@ -298,7 +309,9 @@
             </div>
           </div>
           <div class="text-section">
-            <a href="./product.html"><h4>PlayStation 5 - DVD + Online</h4></a>
+            <a href="./product.html">
+              <h4>PlayStation 5 - DVD + Online</h4>
+            </a>
             <small>Sony Pvt. Ltd.</small>
           </div>
           <div class="rating-section">
@@ -318,6 +331,15 @@
       </div>
     </div>
     </div>
+    <input type="checkbox" name="filter-toggle" id="filter-toggle">
+    <label for="filter-toggle" class="btn filter-btn">
+
+      <span id="open-filter flex-and-center"><i class="fa-solid fa-arrow-down-short-wide fa-lg pr-1"></i>
+        <span id="filter-btn-text">Filter</span>
+      </span>
+      <!-- <span id="close-filter flex-and-center"> <i class="fa-solid fa-arrow-down-short-wide fa-lg pr-1"></i><span>Apply</span></span> -->
+
+    </label>
   </main>
 
   <!-- Landing Page Content Ends -->
@@ -347,5 +369,6 @@
     </div>
   </footer>
 </body>
+<script src="../scripts/products.js"></script>
 
 </html>
