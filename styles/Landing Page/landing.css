@@ -1,5 +1,7 @@
 :root{
   --landing-text-bg: #3f43447a;
+  --launch-bg: #fcfcfc;
+  --transparent-dark-bg: #f0f0f07e;
 }
 
 .landing-section{
@@ -80,7 +82,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(240, 240, 240, 0.493);
+  background-color: var(--transparent-dark-bg);
   opacity: 0;
   transition: 0.5s ease;
 }
@@ -117,7 +119,7 @@
   gap: 1rem;
   max-width: 35rem;
   height: auto;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--launch-bg);
   border-radius: 4px;
   margin: 1rem;
 }

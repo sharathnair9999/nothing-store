@@ -1,5 +1,13 @@
 @import url("https://nothing-ui-library.netlify.app/styles/index.css");
 @import url("./Header/header.css");
+:root{
+  --footer-color: #a5f3fc;
+  --scrollbar-track-color: #f1f1f1;
+  --scrollbar-thumb-1: #6aeeff;
+  --scrollbar-thumb-2: #00aec5;
+  --scrollbar-hover:#5ddfff;
+}
+
 body{
   padding: 0;
   margin: 0;
@@ -8,7 +16,7 @@ body{
 }
  a {
    text-decoration: none;
-   color: black;
+   color: var(--black);
   }
  ol li {
    list-style: none;
@@ -21,18 +29,18 @@ body{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--scrollbar-track-color);
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background:  linear-gradient(0deg, rgb(106, 238, 255) 0%, rgb(0, 174, 197) 100%);
+    background:  linear-gradient(0deg, var(--scrollbar-thumb-1) 0%, var(--scrollbar-thumb-2) 100%);
     border-radius: 20px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(93, 223, 255);
+    background: var(--scrollbar-hover);
   }
 
   main{
@@ -49,7 +57,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;  
-    background:#a5f3fc;
+    background:var(--footer-color);
     padding: 0.5rem 0;
   }
 
@@ -73,7 +81,7 @@ body{
   }
 
   .heart{
-    color: red;
+    color: var(--danger-600);
   }
 
   @media screen and (max-width:768px) {
