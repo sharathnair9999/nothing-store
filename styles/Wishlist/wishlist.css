@@ -10,7 +10,7 @@
 }
 
 .wishlist-container .save{
-  color: var(--red-300);
+  color: var(--danger-300);
 }
 
 .products{
