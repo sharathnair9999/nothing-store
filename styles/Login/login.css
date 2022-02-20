@@ -61,7 +61,7 @@
 
 .checkbox{
   justify-content: flex-start;
-  padding: 4px 0;
+  padding: 0.4rem 0;
   font-size: 0.9rem;
 }
 
@@ -70,6 +70,6 @@
 }
 
 .img-container img{
-  border-radius: 10px;
+  border-radius: 0.8rem;
   box-shadow: 4px 6px 8px 3px var(--box-shadow-color);
 }

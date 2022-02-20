@@ -241,7 +241,7 @@ nav .nav-actions{
   #check:checked ~ nav ol{
     visibility: visible;
     height: 50vh;
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 0.8rem;
     position: absolute;
     top: 6rem;
     bottom: 0;
