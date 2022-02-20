@@ -19,6 +19,7 @@
 
   <!-- Landing page CSS -->
   <link rel="stylesheet" href="../styles/Products/product.css" />
+  <link rel="stylesheet" href="../styles/Products/products.css" />
   <title>Product | Nothing Store</title>
 </head>
 
@@ -57,7 +58,14 @@
           </div>
         </a>
       </li>
-      <li><a href="#" class="link badge-container"><i class="fa-solid fa-user"></i></a></li>
+      <li class="user-icon  flex-and-center flex-col">
+        <a href="#" class="">
+          <div class="badge-container mx-1 relative">
+            <i class="fa-solid fa-user fa-lg"></i></i>
+            <a href="./logout.html" class="link logout-btn absolute">Logout</a>
+          </div>
+        </a>
+      </li>
     </ol>
     <label for="check" class="bar">
       <span class="fa-solid fa-bars" id="bars"></span>
