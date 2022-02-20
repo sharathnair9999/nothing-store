@@ -25,8 +25,8 @@
 .user-icon:hover .logout-btn{
   display: block;
   top: 3rem;
-  background-color: aliceblue;
-  color: black;
+  background-color: var(--primary-50);
+  color: var(--black);
   padding: 4px 8px;
   font-size: 1rem;
   border-radius: 1rem;

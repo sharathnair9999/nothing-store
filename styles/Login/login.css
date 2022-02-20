@@ -1,9 +1,5 @@
 @import url("https://nothing-ui-library.netlify.app/styles/index.css");
 
-:root{
-  --black: black;
-}
-
 .signup-container , .login-container{
   padding: 2rem;
   gap: 3rem;
